@@ -22,7 +22,7 @@ from about import views as about_views
 # import the views in urlpatterns list
 # must add the trailing / to the URL patterns
 urlpatterns = [
-    path('hello/', index_views.index, name='index'),  # the index-function from the views.py in the app directory
-    path('about/', about_views.about_me, name='about'),
-    path('admin/', admin.site.urls),
+    path('', index_views.index, name='index'),  # the index-function from the views.py in the app directory 
+    path('about', about_views.about_me, name='about'),
+    path('admin', admin.site.urls),
 ]
