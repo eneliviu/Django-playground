@@ -1,0 +1,18 @@
+django-admin startproject my_project . - create my_project in the current directory
+python3 manage.py startapp hello_world - create hello_world app inside the hello_world directory
+python3 manage.py runserver - run my_project
+
+Creating a project:
+django-admin startproject my_project .
+
+Creating an app:
+python3 manage.py startapp hello_world
+
+
+Important files in our project folder:
+- settings.py: this file contains the project-wide settings, such as installed apps and database connection information, among other things.
+- manage.py: this file is in the root directory, above the project folder. It is used to create apps, run the project and perform some database operations.
+
+Important files in app-folder(s):
+- models.py:  database models are stored here, which define the structure of the database used by our app.
+- views.py: this file contains the view code for the app.
