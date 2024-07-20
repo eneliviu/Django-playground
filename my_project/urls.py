@@ -16,9 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from hello_world import views as index_views
+from hello_world import views as index_views  # import the views from the app and assigns an alias
+from about import views as about_views
 
+# import the views in urlpatterns list
+# must add the trailing / to the URL patterns
 urlpatterns = [
-    path('', index_views.index, name='index'),
+    path('hello/', index_views.index, name='index'),  # the index-function from the views.py in the app directory
+    path('about/', about_views.about_me, name='about'),
     path('admin/', admin.site.urls),
 ]

@@ -8,7 +8,6 @@ django-admin startproject my_project .
 Creating an app:
 python3 manage.py startapp hello_world
 
-
 Important files in our project folder:
 - settings.py: this file contains the project-wide settings, such as installed apps and database connection information, among other things.
 - manage.py: this file is in the root directory, above the project folder. It is used to create apps, run the project and perform some database operations.
