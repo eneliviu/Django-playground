@@ -1,3 +1,8 @@
+
+pip3 freeze --local > requirements.txt - create the requirements file 
+
+django-admin version - check the installed version
+
 django-admin startproject my_project . - create my_project in the current directory
 python3 manage.py startapp hello_world - create hello_world app inside the hello_world directory
 python3 manage.py runserver - run my_project
